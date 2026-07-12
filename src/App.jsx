@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import ImageCapture from './components/ImageCapture'
 import ColorAnalyzer from './components/ColorAnalyzer'
 import LiveCamera from './components/LiveCamera'
+import PWAPrompt from './components/PWAPrompt'
 
 // Custom Modern SVG Icons
 const SunIcon = () => (
@@ -114,6 +115,7 @@ function App() {
           )}
         </main>
       </div>
+      <PWAPrompt />
     </>
   )
 }
