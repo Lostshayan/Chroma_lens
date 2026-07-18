@@ -386,7 +386,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
+}
+
+.live-analyzer {
+  gap: 0.75rem;
 }
 
 .analyzer-header {
@@ -413,7 +417,7 @@ body {
 .instruction {
   font-size: 0.95rem;
   color: var(--text-secondary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
@@ -474,7 +478,8 @@ body {
 .video-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 9/16;
+  aspect-ratio: 1/1; /* changed from 9/16 to 1/1 for compact mobile view */
+  max-width: 360px;
   border-radius: var(--border-radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
