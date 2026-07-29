@@ -54,7 +54,12 @@ function App() {
       <div className="app-container">
         <header className="header">
           <div className="logo-group">
-            <span className="logo-icon"><PaletteIcon /></span>
+            <img 
+              src={theme === 'light' ? '/logo_light.png' : '/logo_dark.png'} 
+              alt="ChromaLens" 
+              className="logo-vector logo-float" 
+              style={{ height: '36px', width: '36px' }} 
+            />
             <h1>ChromaLens</h1>
           </div>
           <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle Theme">
